@@ -1,0 +1,214 @@
+body {
+    background-image: url('images/wallpaper.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.notebook-background {
+    background-color: #ffe6f0; /* light pink */
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Small gap between the left and right notebooks */
+}
+
+.notebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 700px;  /* Same height for both notebooks */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-notebook {
+    width: 450px; /* Smaller width for the left notebook */
+}
+
+.left-notebook img{ 
+    width: 200px; 
+    height:200px; 
+}
+.page {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* <-- this centers items like <img> horizontally */
+  justify-content: flex-start;
+}
+
+.right-notebook {
+  width: 800px;
+  position: relative; /* Important: make it the positioning context */
+  z-index: 2;
+}
+
+.bookmarks {
+  position: absolute;
+  top: 30%;
+  right: 200px; 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1; /* Behind the notebook */
+}
+
+.bookmark {
+  width: 80px;
+  height: 40px;
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.bookmark:hover {
+  transform: scale(1.05);
+  background-color: #ff69b4;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.middle-rectangle {
+    position: absolute;
+    top: 20%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.middle-rectangle-two {
+    position: absolute;
+    top: 25%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.middle-rectangle-three {
+    position: absolute;
+    top: 30%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.middle-rectangle-four {
+    position: absolute;
+    top: 70%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.middle-rectangle-five {
+    position: absolute;
+    top: 75%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.middle-rectangle-six {
+    position: absolute;
+    top: 80%;  /* Position it vertically in the middle of the right notebook */
+    left: 35%;
+    width: 4%;  /* Stretch across the full width of the right notebook */
+    height: 20px;
+    background-color: #ccc;  
+    border-radius: 25px;  
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+.glide-container {
+  position: absolute;
+  top: 20px; /* adjust as needed */
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+
+}
+
+.gliding-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: glide 30s linear infinite;
+  font-size: 24px;
+  color: #ff69b4;
+  white-space: nowrap;
+}
+
+@keyframes glide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
