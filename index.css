@@ -4,17 +4,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: "Rubik Moonrocks", sans-serif;
 }
 
 
 .notebook-background {
-    background-color: #ffe6f0; /* light pink */
+    background-color: #ffe6f0; 
     padding: 40px;
     border-radius: 20px;
     display: flex;
@@ -24,7 +24,7 @@ body {
 .container {
     display: flex;
     align-items: center;
-    gap: 10px;  /* Small gap between the left and right notebooks */
+    gap: 10px; 
 }
 
 .notebook {
@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 700px;  /* Same height for both notebooks */
+    height: 700px; 
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 15px 10px 10px 12px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ body {
 }
 
 .left-notebook {
-    width: 450px; /* Smaller width for the left notebook */
+    width: 450px; 
 }
 
 .left-notebook img{ 
@@ -57,33 +57,36 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* <-- this centers items like <img> horizontally */
+  align-items: center; 
   justify-content: flex-start;
 }
 
 .right-notebook {
   width: 800px;
-  position: relative; /* Important: make it the positioning context */
+  position: relative; 
   z-index: 2;
 }
 
 .bookmarks {
   position: absolute;
   top: 30%;
-  right: 200px; 
+  right: 170px; 
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 15px;
-  z-index: 1; /* Behind the notebook */
+  font-size: 20px; 
+  z-index: 1;
+}
+.small{
+    font-size : 20px; 
 }
 
 .bookmark {
-  width: 80px;
+  width: 100px;
   height: 40px;
   background-color: #ffb6c1;
   color: white;
-  font-weight: bold;
   text-align: center;
   line-height: 40px;
   border-radius: 8px;
@@ -109,9 +112,9 @@ p {
 
 .middle-rectangle {
     position: absolute;
-    top: 20%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 20%; 
+    left: 38%;
+    width: 4%;  
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -122,9 +125,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .middle-rectangle-two {
     position: absolute;
-    top: 25%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 25%; 
+    left: 38%;
+    width: 4%; 
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -136,9 +139,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .middle-rectangle-three {
     position: absolute;
-    top: 30%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 30%; 
+    left: 38%;
+    width: 4%;  
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -149,9 +152,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .middle-rectangle-four {
     position: absolute;
-    top: 70%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 70%;  
+    left: 38%;
+    width: 4%;  
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -162,9 +165,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .middle-rectangle-five {
     position: absolute;
-    top: 75%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 75%; 
+    left: 38%;
+    width: 4%;
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -175,9 +178,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .middle-rectangle-six {
     position: absolute;
-    top: 80%;  /* Position it vertically in the middle of the right notebook */
-    left: 35%;
-    width: 4%;  /* Stretch across the full width of the right notebook */
+    top: 80%; 
+    left: 38%;
+    width: 4%;  
     height: 20px;
     background-color: #ccc;  
     border-radius: 25px;  
@@ -188,7 +191,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 
 .glide-container {
   position: absolute;
-  top: 20px; /* adjust as needed */
+  top: 20px;
   width: 100%;
   overflow: hidden;
   z-index: 100;
