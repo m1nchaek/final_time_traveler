@@ -12,7 +12,10 @@ body {
     font-family: "Rubik Moonrocks", sans-serif;
 }
 
-
+.image-two { 
+  width:100px; 
+  height:100px; 
+}
 .notebook-background {
     background-color: #ffe6f0; 
     padding: 40px;
