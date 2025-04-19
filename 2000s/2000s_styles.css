@@ -69,26 +69,26 @@ nav {
 }
 @keyframes slideInLeft {
     from {
-        transform: translateX(-350px); /* Off-screen to the left */
-        opacity: 0; /* Start invisible */
+        transform: translateX(-350px);
+        opacity: 0; 
     }
     to {
-        transform: translateX(0); /* Move to original position */
-        opacity: 1; /* Fade in */
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
 
 @keyframes slideInRight {
     from {
-        transform: translateX(350px); /* Off-screen to the right */
-        opacity: 0; /* Start invisible */
+        transform: translateX(350px);
+        opacity: 0; 
     }
     to {
-        transform: translateX(0); /* Move to original position */
-        opacity: 1; /* Fade in */
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
-
+/* https://animate.style/ & https://www.w3schools.com/css/css3_animations.asp */
 .h1s{ 
     text-align: center;
     font-size: 25px;
@@ -244,6 +244,7 @@ margin: 0 80px ;
     animation: slideInRight 1.2s ease-out forwards;
     animation-delay: 3s; 
 }
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
 
 .left-five-box img { 
     margin: 0 80px ; 
